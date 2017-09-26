@@ -1,0 +1,25 @@
+body 	{ background:white }
+
+h1 	{	font-family: Arial, Helvetica, Sans-serif; font-size:20pt;
+	 		color:black; font-weight:bold; background: lightBlue}
+
+h2	{	font-family: Arial, Helvetica, Sans-serif; font-size:14pt;
+			color:black; }
+h3	{	font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+			color:black; }
+
+p	{	font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+	 	color:black; }
+
+p.alert	{ 	font-style: italic; color:red;}
+
+
+
+td.center{	text-align:center;}
+
+
+option	{ 	font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+	 			color:black; background: white}
+
+
+
