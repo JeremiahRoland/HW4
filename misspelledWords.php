@@ -54,7 +54,10 @@
 		//print("<pre>");
 		//print_r($realWords);
 		//print("</pre>");
-		
+	
+		sort($realWords);
+		sort($fakeWords); 
+	
 		//print("<p>Here are the fake words</p>"); 
 		//print("<pre>");
 		//print_r($fakeWords);
