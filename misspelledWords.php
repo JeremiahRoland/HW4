@@ -101,6 +101,23 @@
 		}
 	?>
 		</table> 
+	<?php
+		//write the realWords array to the real_words file 
+		$realWriter = fopen("real_words.txt", "w") or die('Cannot open file: '.$writeFile);
+		for($o = 0; $o < count($realWords); $o++)
+		{		
+			fwrite($realWriter, $realWords[$o]."\r\n"); 
+		} 
+		fclose($realWriter);
+		
+		//write the fakeWords array to the fake_words file 
+		$fakeWriter = fopen("fake_words.txt", "w") or die('Cannot open file: '.$writeFile);
+		for($o = 0; $o < count($fakeWords); $o++)
+		{		
+			fwrite($fakeWriter, $fakeWords[$o]."\r\n"); 
+		} 
+		fclose($fakeWriter);
+	?> 
 	
 </body>
 </html> 
