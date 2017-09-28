@@ -80,6 +80,8 @@
 		
 	?>
 		</table> 
+		//use a blank line to make it look a little nicer 
+		<p></p>
 			<table> 
 			<table border = "2">
 			<tr> <th>Fake Words</th> </tr>
