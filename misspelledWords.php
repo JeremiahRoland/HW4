@@ -11,6 +11,13 @@
 </head>
 <body>
 	<h1>Misspelled Words</h1> 
+	<h2>Click the button below to find the levenshtein distances for each of the fake words</h2> 
+	<form action = "levenshtein.php" method = "post" > 
+		<p> 
+			<input type = "submit" value = "Find Levenshtein Distance">
+		</p>
+	</form>
+	<p><a href="javascript:history.back()">Return to Previous Page</a></p>
 	<?php
 		$randomWords = array(); 
 		$characters = "abcdefghijklmnopqrstuvwxyz"; 
