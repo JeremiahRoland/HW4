@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--	Author: 	Jeremiah Roland
+<!--	Author: 	Super Friends
 		Date:		September 25, 2017
 		File:		Start.html
 		Purpose: 	Assignment 4
