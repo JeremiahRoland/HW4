@@ -1,4 +1,4 @@
-<!--            Author:         Caleb Ooten
+<!--            Author:         Super Friends
 		Date:		October 11, 2017
 		File:		homophones.php
 		Purpose: 	Assignment 4
