@@ -17,6 +17,15 @@
 			<input type = "submit" value = "Find Levenshtein Distance">
 		</p>
 	</form>
+        
+        <h1>Homophones</h1> 
+	<h2>Click the button below to find the homophones for each of the fake words</h2> 
+	<form action = "homophones.php" method = "post" > 
+		<p> 
+			<input type = "submit" value = "Find Homophones">
+		</p>
+	</form>
+        
 	<p><a href="javascript:history.back()">Return to Previous Page</a></p>
 	<?php
 		$randomWords = array(); 
@@ -90,7 +99,7 @@
 		
 	?>
 		</table> 
-		//use a blank line to make it look a little nicer 
+		<!--use a blank line to make it look a little nicer -->
 		<p></p>
 			<table> 
 			<table border = "2">
