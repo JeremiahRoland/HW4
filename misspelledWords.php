@@ -11,15 +11,12 @@
 </head>
 <body>
 	<h1>Misspelled Words</h1> 
-	<h2>Click the button below to find the levenshtein distances for each of the fake words</h2> 
+	<h2>Click either button below to find the Levenshtein Distances or the Homophones for every Misspelled Word</h2> 
 	<form action = "levenshtein.php" method = "post" > 
 		<p> 
 			<input type = "submit" value = "Find Levenshtein Distance">
 		</p>
 	</form>
-        
-        <h1>Homophones</h1> 
-	<h2>Click the button below to find the homophones for each of the fake words</h2> 
 	<form action = "homophones.php" method = "post" > 
 		<p> 
 			<input type = "submit" value = "Find Homophones">
