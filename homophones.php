@@ -42,9 +42,9 @@ foreach ($fakesMetaphone as $key => $value) {
 
 ob_start();
 foreach ($foundMetaphone as $a => $b) {
-    echo $a . ":" . count($b) . ":" ;
+    echo "<strong> $a </strong>" . ": " . count($b) . ": " ;
     foreach ($b as $c => $d) {
-        echo $d . ":";
+        echo $d . ": ";
     }
     echo PHP_EOL;
 }
@@ -55,11 +55,12 @@ $metaphoneArray = explode("\n", $outputMetaphone);
 
 ob_start();
 foreach ($foundSoundex as $a => $b) {
-    echo $a . ":" . count($b) . ":" ;
+    echo "<strong> $a </strong>" . ": " . count($b) . ": " ;
     foreach ($b as $c => $d) {
-        echo $d . ":";
+        echo $d . ": ";
     }
     echo PHP_EOL;
+    print("<p></p>"); 
 }
 $outputSoundex = ob_get_clean();
 $soundexArray = explode("\n", $outputSoundex);
@@ -68,8 +69,8 @@ $soundexArray = explode("\n", $outputSoundex);
 $file = fopen("homophones.txt", "a");
 
 for($i=0; $i < count($soundexArray); $i++) {
-    fwrite($file, $soundexArray[$i]);
-    fwrite($file, $metaphoneArray[$i]);
+    fwrite($file, $soundexArray[$i]."\r\n");
+    fwrite($file, $metaphoneArray[$i]."\r\n");
     echo $soundexArray[$i] . "<br>";
     echo $metaphoneArray[$i] . "<br>";
 }
