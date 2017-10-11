@@ -17,6 +17,7 @@ $fileClear = fopen("homophones.txt", "w");
 fclose($fileClear);
 $lines = file("engmix.txt", FILE_IGNORE_NEW_LINES);
 $fakes = file("fake_words.txt", FILE_IGNORE_NEW_LINES);
+print("<p><strong> FORMAT NOTE </strong> :  Word: Number of Homophones: Homophone 1, Homophone 2, ... </p>");
 
 
 //Generate doundex and metaphone values for the dictionary file
