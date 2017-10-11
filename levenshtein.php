@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--	Author: 	Jeremiah Roland
+<!--	Author: 	Super Friends
 		Date:		September 28, 2017
 		File:		levenshtein.php
 		Purpose: 	Assignment 4
