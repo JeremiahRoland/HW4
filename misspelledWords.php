@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--	Author: 	Jeremiah Roland
+<!--	Author: 	Super Friends 
 		Date:		September 26, 2017
 		File:		misspelledWords.php
 		Purpose: 	Assignment 4
