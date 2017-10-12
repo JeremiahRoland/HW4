@@ -62,7 +62,7 @@
 		?> 
 		<table> 
 			<table border = "2">
-			<tr> <th>Letter</th> <th>Frequency</th> <th>Percentage</th> </tr>
+			<tr> <th>Letter</th> <th>Frequency</th> <th>Percentage % </th> </tr>
 	<?php
 		//print the frequencies and percentages to the screen and write them to a file 
 		//format: letter: freq. : %
@@ -70,7 +70,7 @@
 		{
 			$letter = $alphabetHolder[$p];
 			$freq = $alphabet["$alphabetHolder[$p]"]; 
-			$percentage = round($freq/$letterCount, 3); 
+			$percentage = round((($freq/$letterCount)*100), 3); 
 		
 			
 	?> 
@@ -82,10 +82,10 @@
 			//print("<p>$letter : $freq : $percentage </p>");
 			$writeFile = fopen("letter_frequency.txt", "a") or die('Cannot open file: '.$writeFile);
 			fwrite($writeFile, $letter);
-			fwrite($writeFile, ":" );
+			fwrite($writeFile, ": " );
 			fwrite($writeFile, $freq);
-			fwrite($writeFile, ":");
-			fwrite($writeFile, $percentage."\r\n");
+			fwrite($writeFile, ": ");
+			fwrite($writeFile, $percentage. "%" . "\r\n");
 			fclose($writeFile);
 		}
 		
